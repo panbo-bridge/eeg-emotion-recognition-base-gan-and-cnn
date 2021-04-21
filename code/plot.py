@@ -1,0 +1,34 @@
+import matplotlib.pyplot as plt
+y1=[86.04,
+67.93,
+61.03,
+63.10,
+70.00,
+78.62,
+75.51,
+79.31,
+69.31,
+77.58,
+68.96,
+66.06]
+x1=["s01", "s02", "s04", "s06", "s07", "s08", "s09", "s10", "s11", "s17", "s18", " s22"]
+x2=x1
+y2=[88.08,
+71.68,
+69.70,
+71.56,
+78.09,
+83.67,
+83.87,
+86.71,
+75.08,
+82.43,
+76.89,
+74.85]
+plt.plot(x1,y1,label='case1',linewidth=2,color='b',marker='o')
+plt.plot(x2,y2,label='case2',marker='o',linewidth=2,color='g')
+plt.xlabel('subject')
+plt.ylabel('accuracy(%)')
+plt.title('FBSCNN(β+γ)')
+plt.legend()
+plt.show()
